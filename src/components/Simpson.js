@@ -15,14 +15,14 @@ componentDidMount() {
     });
 }
 
-render(){
+render(quote, character, image){
     return(
         <ul>
-            {this.state.quote.map(quote => <li>{quote.name}</li>)}
+            {this.state.quote.map(quote => (
+            <li key={quote.id}>{quote.quote}{quote.character}{quote.image}</li>))}
         </ul>
-    )
+    );
 }
-
 }
 
 
