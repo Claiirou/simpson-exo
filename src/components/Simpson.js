@@ -1,7 +1,7 @@
 import React from "react";
 import axios from "axios";
 
-const SimpsonQuote [Quote, SetQuote] = React.useState()
+const [Quote, setQuote] = React.useState(setQuote)
 
 const Simpson() = {
     axios
